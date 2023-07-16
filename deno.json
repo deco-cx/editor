@@ -6,7 +6,7 @@
   "tasks": {
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
     "build": "deno task lume",
-    "start": "deno run -A _deco.ts"
+    "start": "deno task build && deno run -A _deco.ts"
   },
   "imports": {
     "lume/": "https://deno.land/x/lume@v1.18.1/"

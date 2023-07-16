@@ -78,4 +78,6 @@ site.use(terser());
 site.use(toml());
 site.use(vento());
 
+site.ignore("README.md", "CHANGELOG.md", "LICENSE.md", "deno.lock");
+
 export default site;
